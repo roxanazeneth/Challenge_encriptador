@@ -6,7 +6,7 @@ const removeAccents = (str) => {
 } 
 const imagenMuneco = document.querySelector("#muneco");
 const tituloMensaje = document.querySelector("#tituloMensaje");
-const parrafo = document.querySelector("parrafo");
+const parrafo = document.querySelector("#parrafo");
 const contRes = document.querySelector(".contenedor-resultado");
 
 const matriz_encrip = [
@@ -72,7 +72,7 @@ function encriptar(textoEncriptado){
         imagenMuneco.src = "./img/muneco.png";
         tituloMensaje.textContent="Ningún mensaje fue encontrado";
         parrafo.textContent="Ingresa el texto que deseas encriptar o desencriptar";
-        contRes.textContent=null;//NO QUITA EL VALOR YA DESENCRIPTADO ¡¡¡!!!! REVISAR
+        resultado.textContent="";
     }
 }
 
@@ -94,7 +94,7 @@ function desencriptar(textoDesencriptado){
         imagenMuneco.src = "./img/muneco.png";
         tituloMensaje.textContent="Ningún mensaje fue encontrado";
         parrafo.textContent="Ingresa el texto que deseas encriptar o desencriptar";
-        resultado.textContent=null; //NO QUITA EL VALOR YA DESENCRIPTADO ¡¡¡!!!! REVISAR
+        resultado.textContent="";
     }
 }
 
